@@ -1,0 +1,109 @@
+/* ROOT */
+:root {
+  --jualgpt-primary: #f38020;
+  --jualgpt-secondary: #c4e8b0;
+  --jualgpt-accent: #2f8d9d;
+  --radius: 8px;
+}
+
+/* FONT */
+.is-epilogue {
+  font-family: "Epilogue", sans-serif;
+}
+
+/* CHANGE DEFAULT VALUES */
+.is-primary {
+  background-color: var(--jualgpt-primary) !important;
+}
+.has-text-primary {
+  color: var(--jualgpt-primary) !important;
+}
+.is-primary.input,
+.is-primary.textarea {
+  background-color: white !important;
+  border-color: var(--jualgpt-primary) !important;
+}
+.is-primary.input:focus,
+.button.is-focused:not(:active),
+.button:focus:not(:active) {
+  box-shadow: 0 0 0 0.125em var(--jualgpt-secondary) !important;
+}
+.button.is-focused,
+.button:focus {
+  border-color: var(--jualgpt-primary) !important;
+}
+a:not(.no-primary):hover {
+  color: var(--jualgpt-primary) !important;
+}
+body::-webkit-scrollbar {
+  width: 0.3em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--jualgpt-primary);
+  outline: 1px solid rgba(235, 20, 20, 0);
+}
+label.error {
+  font-size: smaller;
+  display: block;
+  text-align: left;
+  color: red !important;
+}
+
+/* NAVBAR */
+.nav-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.nav-title:hover {
+  color: var(--jualgpt-primary) !important;
+}
+.nav-title img {
+  margin-right: 0.2em;
+}
+.navbar-start:hover > .navbar-item {
+  opacity: 0.3;
+}
+
+.navbar-start:hover > .navbar-item:hover {
+  opacity: 1;
+}
+
+.navbar-item .icon {
+  margin-right: 0.1em !important;
+}
+.navbar-link:not(.is-arrowless)::after {
+  border-color: var(--jualgpt-primary);
+}
+
+/* DASHBOARD */
+.dashboard-data {
+  margin-top: 3em;
+  background: white !important;
+  border-radius: var(--radius);
+  padding: 1em;
+  color: var(--jualgpt-primary) !important;
+}
+
+/* INPUT */
+.input:active,
+.input:focus,
+.is-active.input,
+.is-active.textarea,
+.is-focused.input,
+.is-focused.textarea,
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus,
+.textarea:active,
+.textarea:focus {
+  border-color: var(--jualgpt-primary) !important;
+  box-shadow: 0 0 0 0.125em rgb(215 42 35 / 25%) !important;
+}
+
+.control.has-icons-left .input:focus ~ .icon,
+.control.has-icons-left .select:focus ~ .icon,
+.control.has-icons-right .input:focus ~ .icon,
+.control.has-icons-right .select:focus ~ .icon {
+  color: var(--jualgpt-primary) !important;
+}
