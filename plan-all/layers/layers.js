@@ -194,9 +194,51 @@ var lyr_CheckPointJuritPlanA_13 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/CheckPointJuritPlanA_13.png" /> CheckPoint Jurit Plan-A'
             });
+var format_DropPointuntukPlannAB_14 = new ol.format.GeoJSON();
+var features_DropPointuntukPlannAB_14 = format_DropPointuntukPlannAB_14.readFeatures(json_DropPointuntukPlannAB_14, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_DropPointuntukPlannAB_14 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_DropPointuntukPlannAB_14.addFeatures(features_DropPointuntukPlannAB_14);
+var lyr_DropPointuntukPlannAB_14 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_DropPointuntukPlannAB_14, 
+                style: style_DropPointuntukPlannAB_14,
+                interactive: true,
+                title: '<img src="styles/legend/DropPointuntukPlannAB_14.png" /> DropPoint untuk Plann A-B'
+            });
+var format_DropPointuntukPlanEmergensi_15 = new ol.format.GeoJSON();
+var features_DropPointuntukPlanEmergensi_15 = format_DropPointuntukPlanEmergensi_15.readFeatures(json_DropPointuntukPlanEmergensi_15, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_DropPointuntukPlanEmergensi_15 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_DropPointuntukPlanEmergensi_15.addFeatures(features_DropPointuntukPlanEmergensi_15);
+var lyr_DropPointuntukPlanEmergensi_15 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_DropPointuntukPlanEmergensi_15, 
+                style: style_DropPointuntukPlanEmergensi_15,
+                interactive: true,
+                title: '<img src="styles/legend/DropPointuntukPlanEmergensi_15.png" /> DropPoint untuk Plan Emergensi'
+            });
+var format_ChekPointBasecampPanitia_16 = new ol.format.GeoJSON();
+var features_ChekPointBasecampPanitia_16 = format_ChekPointBasecampPanitia_16.readFeatures(json_ChekPointBasecampPanitia_16, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_ChekPointBasecampPanitia_16 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_ChekPointBasecampPanitia_16.addFeatures(features_ChekPointBasecampPanitia_16);
+var lyr_ChekPointBasecampPanitia_16 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_ChekPointBasecampPanitia_16, 
+                style: style_ChekPointBasecampPanitia_16,
+                interactive: true,
+                title: '<img src="styles/legend/ChekPointBasecampPanitia_16.png" /> ChekPoint Basecamp Panitia'
+            });
 
-lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_JalanDroppointAkeWelcoming_1.setVisible(true);lyr_JURITPLANB_2.setVisible(true);lyr_JURITPLANA_3.setVisible(true);lyr_ShortcutPanitia_4.setVisible(true);lyr_NAVDAR12_5.setVisible(true);lyr_JURITEMERGENSI_6.setVisible(true);lyr_NAVDAREMERGENSI_7.setVisible(true);lyr_JalanDroppointBRapelling_8.setVisible(true);lyr_CheckPointJuritEmergensi_9.setVisible(true);lyr_CheckPointNavdarEmergensi_10.setVisible(true);lyr_CheckPointNavdar12_11.setVisible(true);lyr_CheckPointJuritPlanB_12.setVisible(true);lyr_CheckPointJuritPlanA_13.setVisible(true);
-var layersList = [lyr_GoogleSatelliteHybrid_0,lyr_JalanDroppointAkeWelcoming_1,lyr_JURITPLANB_2,lyr_JURITPLANA_3,lyr_ShortcutPanitia_4,lyr_NAVDAR12_5,lyr_JURITEMERGENSI_6,lyr_NAVDAREMERGENSI_7,lyr_JalanDroppointBRapelling_8,lyr_CheckPointJuritEmergensi_9,lyr_CheckPointNavdarEmergensi_10,lyr_CheckPointNavdar12_11,lyr_CheckPointJuritPlanB_12,lyr_CheckPointJuritPlanA_13];
+lyr_GoogleSatelliteHybrid_0.setVisible(true);lyr_JalanDroppointAkeWelcoming_1.setVisible(true);lyr_JURITPLANB_2.setVisible(true);lyr_JURITPLANA_3.setVisible(true);lyr_ShortcutPanitia_4.setVisible(true);lyr_NAVDAR12_5.setVisible(true);lyr_JURITEMERGENSI_6.setVisible(true);lyr_NAVDAREMERGENSI_7.setVisible(true);lyr_JalanDroppointBRapelling_8.setVisible(true);lyr_CheckPointJuritEmergensi_9.setVisible(true);lyr_CheckPointNavdarEmergensi_10.setVisible(true);lyr_CheckPointNavdar12_11.setVisible(true);lyr_CheckPointJuritPlanB_12.setVisible(true);lyr_CheckPointJuritPlanA_13.setVisible(true);lyr_DropPointuntukPlannAB_14.setVisible(true);lyr_DropPointuntukPlanEmergensi_15.setVisible(true);lyr_ChekPointBasecampPanitia_16.setVisible(true);
+var layersList = [lyr_GoogleSatelliteHybrid_0,lyr_JalanDroppointAkeWelcoming_1,lyr_JURITPLANB_2,lyr_JURITPLANA_3,lyr_ShortcutPanitia_4,lyr_NAVDAR12_5,lyr_JURITEMERGENSI_6,lyr_NAVDAREMERGENSI_7,lyr_JalanDroppointBRapelling_8,lyr_CheckPointJuritEmergensi_9,lyr_CheckPointNavdarEmergensi_10,lyr_CheckPointNavdar12_11,lyr_CheckPointJuritPlanB_12,lyr_CheckPointJuritPlanA_13,lyr_DropPointuntukPlannAB_14,lyr_DropPointuntukPlanEmergensi_15,lyr_ChekPointBasecampPanitia_16];
 lyr_JalanDroppointAkeWelcoming_1.set('fieldAliases', {'name': 'name', });
 lyr_JURITPLANB_2.set('fieldAliases', {'nama': 'nama', });
 lyr_JURITPLANA_3.set('fieldAliases', {'nama': 'nama', });
@@ -210,6 +252,9 @@ lyr_CheckPointNavdarEmergensi_10.set('fieldAliases', {'name_loc': 'name_loc', 'b
 lyr_CheckPointNavdar12_11.set('fieldAliases', {'nama_loc': 'nama_loc', 'img': 'img', 'bayangan': 'bayangan', });
 lyr_CheckPointJuritPlanB_12.set('fieldAliases', {'nama_loc': 'nama_loc', 'bayangan': 'bayangan', 'img': 'img', });
 lyr_CheckPointJuritPlanA_13.set('fieldAliases', {'nama_loc': 'nama_loc', 'img': 'img', 'bayangan': 'bayangan', });
+lyr_DropPointuntukPlannAB_14.set('fieldAliases', {'img': 'img', 'nama_loc': 'nama_loc', });
+lyr_DropPointuntukPlanEmergensi_15.set('fieldAliases', {'nama_loc': 'nama_loc', 'img': 'img', });
+lyr_ChekPointBasecampPanitia_16.set('fieldAliases', {'name_loc': 'name_loc', 'link': 'link', });
 lyr_JalanDroppointAkeWelcoming_1.set('fieldImages', {'name': 'TextEdit', });
 lyr_JURITPLANB_2.set('fieldImages', {'nama': 'TextEdit', });
 lyr_JURITPLANA_3.set('fieldImages', {'nama': 'TextEdit', });
@@ -223,6 +268,9 @@ lyr_CheckPointNavdarEmergensi_10.set('fieldImages', {'name_loc': 'TextEdit', 'ba
 lyr_CheckPointNavdar12_11.set('fieldImages', {'nama_loc': 'TextEdit', 'img': 'TextEdit', 'bayangan': 'TextEdit', });
 lyr_CheckPointJuritPlanB_12.set('fieldImages', {'nama_loc': 'TextEdit', 'bayangan': 'TextEdit', 'img': 'TextEdit', });
 lyr_CheckPointJuritPlanA_13.set('fieldImages', {'nama_loc': 'TextEdit', 'img': 'TextEdit', 'bayangan': 'TextEdit', });
+lyr_DropPointuntukPlannAB_14.set('fieldImages', {'img': 'TextEdit', 'nama_loc': 'TextEdit', });
+lyr_DropPointuntukPlanEmergensi_15.set('fieldImages', {'nama_loc': 'TextEdit', 'img': 'TextEdit', });
+lyr_ChekPointBasecampPanitia_16.set('fieldImages', {'name_loc': 'TextEdit', 'link': '', });
 lyr_JalanDroppointAkeWelcoming_1.set('fieldLabels', {'name': 'no label', });
 lyr_JURITPLANB_2.set('fieldLabels', {'nama': 'no label', });
 lyr_JURITPLANA_3.set('fieldLabels', {'nama': 'no label', });
@@ -236,6 +284,9 @@ lyr_CheckPointNavdarEmergensi_10.set('fieldLabels', {'name_loc': 'no label', });
 lyr_CheckPointNavdar12_11.set('fieldLabels', {'nama_loc': 'no label', 'img': 'no label', 'bayangan': 'no label', });
 lyr_CheckPointJuritPlanB_12.set('fieldLabels', {'nama_loc': 'no label', 'bayangan': 'no label', 'img': 'no label', });
 lyr_CheckPointJuritPlanA_13.set('fieldLabels', {'nama_loc': 'no label', 'img': 'no label', 'bayangan': 'no label', });
-lyr_CheckPointJuritPlanA_13.on('precompose', function(evt) {
+lyr_DropPointuntukPlannAB_14.set('fieldLabels', {'img': 'no label', 'nama_loc': 'no label', });
+lyr_DropPointuntukPlanEmergensi_15.set('fieldLabels', {'nama_loc': 'no label', 'img': 'no label', });
+lyr_ChekPointBasecampPanitia_16.set('fieldLabels', {'name_loc': 'no label', 'link': 'no label', });
+lyr_ChekPointBasecampPanitia_16.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
