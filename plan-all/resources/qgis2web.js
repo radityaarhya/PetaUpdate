@@ -32,7 +32,7 @@ var map = new ol.Map({
 });
 
 
-map.getView().fit([12937873.872441, -953776.383233, 12941487.246931, -951797.376753], map.getSize());
+map.getView().fit([12939173.290671, -953450.509980, 12940612.379455, -952653.356793], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -72,8 +72,8 @@ var featureOverlay = new ol.layer.Vector({
     updateWhileInteracting: true // optional, for instant visual feedback
 });
 
-var doHighlight = true;
-var doHover = true;
+var doHighlight = false;
+var doHover = false;
 
 var highlight;
 var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
