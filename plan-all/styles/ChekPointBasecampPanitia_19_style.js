@@ -27,7 +27,7 @@ var style_ChekPointBasecampPanitia_19 = function(feature, resolution){
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        image: new ol.style.Circle({radius: 11.538461538461537 + size,
+        image: new ol.style.Circle({radius: 11.53846 + size,
             stroke: new ol.style.Stroke({color: 'rgba(227,26,28,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(227,26,28,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
